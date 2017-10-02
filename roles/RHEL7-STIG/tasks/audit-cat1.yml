@@ -119,3 +119,9 @@
       - RHEL-07-040580
       - always
       - snmp
+
+- name: "HIGH | RHEL-00-013911 | Disable unnecessary services"
+  service:
+    name: jboss
+    enabled: no
+    state: stopped
